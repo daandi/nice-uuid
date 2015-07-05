@@ -1,7 +1,7 @@
 # nice-uuid
 This project aims to provide Tools and Helpers to make working with UUIDs more fun and generally be nice to the user.
 
-https://codeship.com/projects/YOUR_PROJECT_UUID/status?branch=master
+[![Codeship](https://codeship.com/projects/035c1a20-0552-0133-62fb-3e5a614068c3/status?branch=master)](https://codeship.com/projects/89459/status?branch=master)
 
 # Features
 
