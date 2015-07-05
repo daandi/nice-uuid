@@ -1,6 +1,8 @@
 # nice-uuid
 This project aims to provide Tools and Helpers to make working with UUIDs more fun and generally be nice to the user.
 
+https://codeship.com/projects/YOUR_PROJECT_UUID/status?branch=master
+
 # Features
 
 ## UUID String interpolator `uuid`
