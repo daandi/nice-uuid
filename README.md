@@ -5,19 +5,18 @@ This project aims to provide Tools and Helpers to make working with UUIDs more f
 
 # Features
 
-## UUID String interpolator `uuid`
+## UUID String interpolator `uuid` and `u`
 ```scala
 import biz.neumann.NiceUUID._
 
-
-//valid UUID
+// invalid UUID
+scala> uuid"hello-i-am-no-uuid"
+<console>:15: error: You provided a malformed UUID: hello-i-am-no-uuid
+       uuid"hello-i-am-no-uuid"
+       ^
+// valid uuid
 scala> uuid"9ecce884-47fe-4ba4-a1bb-1a3d71ed6530"
-res1: java.util.UUID = 9ecce884-47fe-4ba4-a1bb-1a3d71ed6530
-
-
-// Invalid UUID
-scala> "abc".uuid
-res0: scala.util.Try[java.util.UUID] = Falure(java.lang.IllegalArgumentException: Invalid UUID string: abc
+res2: String = 9ecce884-47fe-4ba4-a1bb-1a3d71ed6530
 ```
 
 ##  pimp string with `uuid` method
