@@ -1,11 +1,15 @@
-# nice-uuid
+# NiceUUID
 This project aims to provide Tools and Helpers to make working with UUIDs more fun and generally be nice to the user.
 
 [![Codeship](https://codeship.com/projects/035c1a20-0552-0133-62fb-3e5a614068c3/status?branch=master)](https://codeship.com/projects/89459/status?branch=master)
 
 # Features
 
-## UUID String interpolator `uuid` and `u`
+## UUID String interpolator `uuid` and `u` with compile time checking
+
+The library provides the string interpolators `uuid` and the shorthand `u`.
+Using the interpolator makes sure that all strings provided within the interpolator are valid UUIDs. This check happen at compile time.
+
 ```scala
 import biz.neumann.NiceUUID._
 
@@ -20,7 +24,7 @@ res2: String = 9ecce884-47fe-4ba4-a1bb-1a3d71ed6530
 ```
 
 ##  pimp string with `uuid` method
-
+Adds method `.uuid` to `String`. It is a nice way of calling `Try( UUID.fromString )`.
 ```scala
 import biz.neumann.NiceUUID._
 
@@ -36,7 +40,7 @@ res2: scala.util.Try[java.util.UUID] = Failure(java.lang.IllegalArgumentExceptio
 ```
 
 ## Automatically convert an UUID to a String
-
+This implcit conversion allows to use a `UUID` in place of a `String`
 ```scala
 import biz.neumann.NiceUUID._
 
@@ -48,7 +52,7 @@ res3: Int = 36
 ```
 
 ## Compile time checked method , code only compiles if UUID provided is valid
-
+A method, that returns a String encoding a UUID. It is checked at compile time and doesn't compile if given String is a valid UUID.
 ```scala
 //valid
 scala> stringEncodingUUID("9ecce884-47fe-4ba4-a1bb-1a3d71ed6530")
@@ -59,4 +63,23 @@ scala> stringEncodingUUID("hello world!")
 <console>:14: error: You provided a malformed UUID: hello world!
        stringEncodingUUID("hello world!")
 
+```
+
+# use NiceUUID in your projects
+
+## sbt
+add this to your `build.sbt`
+
+```scala
+libraryDependencies += "biz.neumann" % "nice-uuid_2.11" % "1.1"
+```
+
+## maven
+
+```xml
+<dependency>
+    <groupId>biz.neumann</groupId>
+    <artifactId>nice-uuid_2.11</artifactId>
+    <version>1.1</version>
+</dependency>
 ```
