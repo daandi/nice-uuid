@@ -3,6 +3,8 @@ This project aims to provide Tools and Helpers to make working with UUIDs more f
 
 [![Codeship](https://codeship.com/projects/035c1a20-0552-0133-62fb-3e5a614068c3/status?branch=master)](https://codeship.com/projects/89459/status?branch=master)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/777d4db9b275411881fadaba9c7da222)](https://www.codacy.com/app/andreas-neumann/nice-uuid)
+
 # Features
 
 ## UUID String interpolator `uuid` and `u` with compile time checking
