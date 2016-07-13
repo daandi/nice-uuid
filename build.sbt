@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 )
 
-publishTo := "https://oss.sonatype.org/"
+sonatypeProfileName := "biz.neumann"
 
 publishMavenStyle := true
 
@@ -20,7 +20,7 @@ publishArtifact in Test := false
 
 pomIncludeRepository := { _ => false }
 
-pomExtra := (
+pomExtra in Global := (
   <url>https://github.com/daandi/nice-uuid</url>
   <licenses>
     <license>
@@ -30,8 +30,9 @@ pomExtra := (
     </license>
   </licenses>
   <scm>
-    <url>git@github.com:daandi/nice-uuid.git</url>
+    <developerConnection>git@github.com:daandi/nice-uuid.git</developerConnection>
     <connection>scm:git:git@github.com:daandi/nice-uuid.git</connection>
+    <url>https://github.com/daandi/nice-uuid</url>
   </scm>
   <developers>
     <developer>
