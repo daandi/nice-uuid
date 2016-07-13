@@ -2,9 +2,9 @@ name := """nice-uuid"""
 
 organization := "biz.neumann"
 
-version := "1.2"
+version := "1.3"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(

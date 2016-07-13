@@ -73,7 +73,7 @@ scala> stringEncodingUUID("hello world!")
 add this to your `build.sbt`
 
 ```scala
-libraryDependencies += "biz.neumann" % "nice-uuid_2.11" % "1.1"
+libraryDependencies += "biz.neumann" %% "nice-uuid" % "1.3"
 ```
 
 ## maven
@@ -82,6 +82,6 @@ libraryDependencies += "biz.neumann" % "nice-uuid_2.11" % "1.1"
 <dependency>
     <groupId>biz.neumann</groupId>
     <artifactId>nice-uuid_2.11</artifactId>
-    <version>1.1</version>
+    <version>1.3</version>
 </dependency>
 ```
