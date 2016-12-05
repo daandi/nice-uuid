@@ -2,14 +2,14 @@ name := """nice-uuid"""
 
 organization := "biz.neumann"
 
-version := "1.3"
+version := "1.4"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.0"
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
-  "org.scala-lang" % "scala-reflect" % "2.11.7",
-  "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+  "org.scala-lang" % "scala-reflect" % "2.12.0",
+  "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 )
 
 sonatypeProfileName := "biz.neumann"
