@@ -1,7 +1,6 @@
 # NiceUUID
 This project aims to provide Tools and Helpers to make working with UUIDs more fun and generally be nice to the user.
 
-[![Codeship](https://codeship.com/projects/035c1a20-0552-0133-62fb-3e5a614068c3/status?branch=master)](https://codeship.com/projects/89459/status?branch=master)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/777d4db9b275411881fadaba9c7da222)](https://www.codacy.com/app/andreas-neumann/nice-uuid)
 
@@ -73,7 +72,7 @@ scala> stringEncodingUUID("hello world!")
 add this to your `build.sbt`
 
 ```scala
-libraryDependencies += "biz.neumann" %% "nice-uuid" % "1.3"
+libraryDependencies += "biz.neumann" %% "nice-uuid" % "1.4"
 ```
 
 ## maven
@@ -81,7 +80,7 @@ libraryDependencies += "biz.neumann" %% "nice-uuid" % "1.3"
 ```xml
 <dependency>
     <groupId>biz.neumann</groupId>
-    <artifactId>nice-uuid_2.11</artifactId>
-    <version>1.3</version>
+    <artifactId>nice-uuid_2.12</artifactId>
+    <version>1.4</version>
 </dependency>
 ```

@@ -4,12 +4,14 @@ organization := "biz.neumann"
 
 version := "1.4"
 
-scalaVersion := "2.12.0"
+scalaVersion := "2.12.1"
+
+crossScalaVersions := Seq("2.11.8", "2.12.1")
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
   "org.scala-lang" % "scala-reflect" % "2.12.0",
-  "org.scalatest" %% "scalatest" % "3.0.1" % "test"
+  "org.scalatest" %% "scalatest" % "3.0.3" % "test"
 )
 
 sonatypeProfileName := "biz.neumann"
