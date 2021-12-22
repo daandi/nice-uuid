@@ -2,7 +2,7 @@
 This project aims to provide Tools and Helpers to make working with UUIDs more fun and generally be nice to the user.
 
 
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/777d4db9b275411881fadaba9c7da222)](https://www.codacy.com/app/andreas-neumann/nice-uuid)
+[![Scala CI](https://github.com/daandi/nice-uuid/actions/workflows/scala.yml/badge.svg)](https://github.com/daandi/nice-uuid/actions/workflows/scala.yml)
 
 # Features
 
@@ -72,7 +72,7 @@ scala> stringEncodingUUID("hello world!")
 add this to your `build.sbt`
 
 ```scala
-libraryDependencies += "biz.neumann" %% "nice-uuid" % "1.4"
+libraryDependencies += "biz.neumann" %% "nice-uuid" % "1.5"
 ```
 
 ## maven
