@@ -1,12 +1,8 @@
-name := """nice-uuid"""
-
+name := "nice-uuid"
 organization := "biz.neumann"
-
-version := "1.4"
-
-scalaVersion := "2.12.1"
-
-crossScalaVersions := Seq("2.11.8", "2.12.1")
+version := "1.5"
+scalaVersion := "2.12.15"
+crossScalaVersions := Seq("2.11.8", "2.12.5")
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
@@ -15,14 +11,10 @@ libraryDependencies ++= Seq(
 )
 
 sonatypeProfileName := "biz.neumann"
-
 publishMavenStyle := true
-
-publishArtifact in Test := false
-
+Test / publishArtifact := false
 pomIncludeRepository := { _ => false }
-
-pomExtra in Global := (
+ Global / pomExtra := (
   <url>https://github.com/daandi/nice-uuid</url>
   <licenses>
     <license>
