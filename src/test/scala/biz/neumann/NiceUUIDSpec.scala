@@ -1,22 +1,15 @@
 package biz.neumann
 
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
+
 import java.util.UUID
-
-import org.scalatest.{Matchers, FlatSpec, WordSpec}
-
 import scala.util.Success
-
-/**
- * Andreas Neumann
- * Email: andreas@neumann.biz
- * Date: 05.07.15
- * Time: 11:44
- */
 
 
 import NiceUUID._
 
-class NiceUUIDSpec extends FlatSpec with Matchers {
+class NiceUUIDSpec extends AnyFlatSpec with Matchers {
 
   val exampleUUIDString = "16da0319-4762-4af1-93c1-5dcef6145d03"
   val exampleUUID : UUID =  UUID fromString  exampleUUIDString
@@ -34,7 +27,7 @@ class NiceUUIDSpec extends FlatSpec with Matchers {
     u"16da0319-4762-4af1-93c1-5dcef6145d03" should be(exampleUUIDString)
   }
 
-  /*it should "fail at compile time when provided with an iprovide a string Interpolator for UUIDs" in {
+  /*it should "fail at compile time" when provided with an invalid string Interpolator for UUIDs" in {
  uuid"invalid16da0319-4762-4af1-93c1-5dcef6145d03" should be(exampleUUID)
 
  Error:(34, 5) You provided a malformed UUID: invalid16da0319-4762-4af1-93c1-5dcef6145d03
