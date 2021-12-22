@@ -18,9 +18,5 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Instrument
-      run: sbt coverage
-    - name: Run tests
-      run: sbt 
-    - name: Run tests
-      run: sbt coverageReport
+    - name: Test with covereage
+      run: sbt ";coverage;test;coverageReport"
