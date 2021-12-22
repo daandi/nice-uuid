@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  build_and_test:
 
     runs-on: ubuntu-latest
 
@@ -18,5 +18,9 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+    - name: Instrument
+      run: sbt coverage
     - name: Run tests
-      run: sbt test
+      run: sbt 
+    - name: Run tests
+      run: sbt coverageReport
